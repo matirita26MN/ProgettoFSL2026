@@ -1,0 +1,241 @@
+<!DOCTYPE html><html class="light" lang="it" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#2f3038",
+                        "inverse-on-surface": "#f1effa",
+                        "background": "#fbf8ff",
+                        "primary-container": "#10b981",
+                        "inverse-primary": "#4edea3",
+                        "surface-container": "#eeedf7",
+                        "on-secondary-fixed": "#001c39",
+                        "secondary-fixed": "#d4e3ff",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#4edea3",
+                        "surface-variant": "#e3e1ec",
+                        "on-surface": "#1a1b22",
+                        "on-primary-fixed-variant": "#005236",
+                        "on-tertiary-fixed-variant": "#5c4300",
+                        "secondary": "#0060ac",
+                        "tertiary-fixed-dim": "#f9bd22",
+                        "on-primary-container": "#00422b",
+                        "surface-dim": "#dad9e3",
+                        "outline-variant": "#bbcabf",
+                        "on-secondary-fixed-variant": "#004883",
+                        "on-secondary": "#ffffff",
+                        "outline": "#6c7a71",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#6ffbbe",
+                        "surface-container-highest": "#e3e1ec",
+                        "on-background": "#1a1b22",
+                        "primary": "#006c49",
+                        "secondary-container": "#64a8fe",
+                        "secondary-fixed-dim": "#a4c9ff",
+                        "surface-container-high": "#e8e7f1",
+                        "on-tertiary-fixed": "#261a00",
+                        "surface-bright": "#fbf8ff",
+                        "on-tertiary-container": "#4a3500",
+                        "tertiary-fixed": "#ffdf9f",
+                        "surface": "#fbf8ff",
+                        "on-surface-variant": "#3c4a42",
+                        "tertiary-container": "#ce9a00",
+                        "error": "#ba1a1a",
+                        "surface-container-low": "#f4f2fd",
+                        "tertiary": "#795900",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed": "#002113",
+                        "on-secondary-container": "#003c70",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#006c49"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "48px",
+                        "base": "8px",
+                        "container-max-width": "1200px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Lexend"],
+                        "headline-sm": ["Lexend"],
+                        "label-md": ["Lexend"],
+                        "headline-md": ["Lexend"],
+                        "body-lg": ["Lexend"],
+                        "display-lg": ["Lexend"],
+                        "body-md": ["Lexend"],
+                        "label-sm": ["Lexend"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface dark:bg-on-surface flex items-center justify-between px-margin-mobile md:px-margin-desktop h-16 w-full shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim" data-icon="medication">medication</span>
+<h1 class="font-headline-sm text-headline-sm font-semibold text-primary dark:text-primary-fixed-dim">PharmaPortfolio</h1>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-primary dark:text-primary-fixed-dim font-label-md text-label-md hover:opacity-80 transition-opacity" href="#">Intro</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-label-md text-label-md hover:opacity-80 transition-opacity" href="#">Progetto</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-label-md text-label-md hover:opacity-80 transition-opacity" href="#">Diario</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-label-md text-label-md hover:opacity-80 transition-opacity" href="#">Contatti</a>
+</nav>
+</header>
+<main class="pt-16 pb-24 md:pb-0">
+<!-- Hero Section -->
+<section class="relative min-h-[795px] flex items-center justify-center overflow-hidden px-margin-mobile md:px-margin-desktop">
+<div class="absolute inset-0 z-0">
+<div class="absolute top-[-10%] right-[-5%] w-[400px] h-[400px] rounded-full bg-primary-container/10 blur-3xl"></div>
+<div class="absolute bottom-[-10%] left-[-5%] w-[350px] h-[350px] rounded-full bg-secondary-container/10 blur-3xl"></div>
+</div>
+<div class="relative z-10 max-w-container-max-width w-full grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7 flex flex-col items-start gap-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]" data-icon="school">school</span>
+<span class="">Anno 2025/2026 • Classe 5G</span>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface tracking-tight">
+                            Esperienza di <span class="text-primary">Matilde Narduzzi</span>
+</h2>
+<p class="font-headline-sm text-headline-sm text-on-surface-variant font-light">
+                            PCTO - Esperienza in Farmacia
+                        </p>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-[600px]">
+                        Un percorso formativo dedicato all'approfondimento delle dinamiche farmaceutiche, la gestione del laboratorio galenico e l'assistenza al cliente, unendo rigore scientifico e innovazione digitale.
+                    </p>
+<div class="flex flex-wrap gap-4 mt-4">
+<button class="bg-primary-container text-on-primary-container px-8 py-3 rounded-xl font-label-md text-label-md font-bold flex items-center gap-2 active:scale-95 transition-transform duration-200 shadow-sm">
+                            Esplora il Progetto
+                            <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<button class="border-2 border-secondary text-secondary px-8 py-3 rounded-xl font-label-md text-label-md font-bold active:scale-95 transition-transform duration-200">
+                            Vedi Diario
+                        </button>
+</div>
+</div>
+<div class="md:col-span-5 hidden md:block">
+<div class="relative w-full aspect-square rounded-[2rem] overflow-hidden shadow-lg border border-surface-variant">
+<img alt="Laboratory equipment" class="w-full h-full object-cover" data-alt="A clean, professional macro shot of pharmaceutical laboratory glassware and modern medical tools on a white marble surface. The lighting is bright and clinical, emphasizing a fresh green and azure blue color palette. The composition is artistic yet precise, evoking a sense of academic diligence and medical innovation. High-end lighting creates soft shadows and clear reflections." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxZWLhd6dy07_riqYVdESeqrahkCNMv-NuwWhYBfio27UoevbJbxGuOclD9-KPDw_FM_oNpex2VS51pBfTZSdEMjeTBhql5a2kdQ0yrsJE6QhHTiE5X6bFNrfi_knnoPCflR9yCgg5A3Szy9H_OlEp8HRMfbzU7Sl53JqanBRkzldwlDbNZEIaRH4SwP44o-4Hs29dt991lcrOrhDxBciippTF9TELUka95044LOXpUVMEJnwWcmj9A1RSV7dXzqb3Phe4Hu6SaEs">
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Highlights -->
+<section class="py-20 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+<div class="max-w-container-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Skills Card -->
+<div class="md:col-span-2 p-8 rounded-3xl border border-surface-variant bg-white shadow-[0_4px_20px_-2px_rgba(0,0,0,0.05)] hover:shadow-[0_12px_32px_-4px_rgba(0,0,0,0.1)] transition-all">
+<div class="flex items-center gap-4 mb-6">
+<div class="p-3 bg-primary-container/10 rounded-2xl">
+<span class="material-symbols-outlined text-primary" data-icon="clinical_notes">clinical_notes</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm">Competenze Acquisite</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-4 py-2 rounded-full bg-secondary-fixed/30 text-on-secondary-fixed-variant font-label-md text-label-md border border-secondary-fixed">Competenze comunicative e linguistiche</span>
+<span class="px-4 py-2 rounded-full bg-primary-fixed/30 text-on-primary-fixed-variant font-label-md text-label-md border border-primary-fixed">Competenze matematiche</span>
+<span class="px-4 py-2 rounded-full bg-tertiary-fixed/30 text-on-tertiary-fixed-variant font-label-md text-label-md border border-tertiary-fixed">Competenze tecnico-scientifiche</span>
+<span class="px-4 py-2 rounded-full bg-secondary-fixed/30 text-on-secondary-fixed-variant font-label-md text-label-md border border-secondary-fixed">Competenze pratiche di laboratorio e&nbsp;Consapevolezza del valore delle conoscenze scolastiche</span>
+</div>
+</div>
+<!-- Small Stat Card -->
+<div class="p-8 rounded-3xl border border-surface-variant bg-white shadow-[0_4px_20px_-2px_rgba(0,0,0,0.05)] flex flex-col justify-between">
+<span class="material-symbols-outlined text-secondary text-4xl" data-icon="timer">timer</span>
+<div>
+<p class="text-4xl font-bold text-on-surface">46h 30m</p>
+<p class="font-label-md text-label-md text-on-surface-variant">Ore di Tirocinio</p>
+</div>
+</div>
+<!-- Location Card -->
+<div class="p-8 rounded-3xl border border-surface-variant bg-white shadow-[0_4px_20px_-2px_rgba(0,0,0,0.05)] flex flex-col justify-between">
+<span class="material-symbols-outlined text-tertiary text-4xl" data-icon="location_on">location_on</span>
+<div>
+<p class="font-headline-sm text-headline-sm text-on-surface">S. Anna-dott.Domenico Gazzola &amp; C.S.N.C.<div>situata in piazza Sant'Anna 2, 24125 bergamo(BG)</div></p>
+<p class="font-label-md text-label-md text-on-surface-variant"><br></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="relative w-full py-12 bg-surface-container-lowest dark:bg-surface-dim border-t border-surface-variant dark:border-outline-variant">
+<div class="flex flex-col items-center justify-center w-full gap-4 text-center px-margin-mobile md:px-margin-desktop">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary" data-icon="medication">medication</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">PharmaPortfolio</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
+                © 2025 Pharmacy Internship Portfolio&nbsp;</p>
+<div class="flex gap-6 mt-2">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md hover:underline" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md hover:underline" href="#">ResearchGate</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md hover:underline" href="#">Curriculum Vitae</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center h-20 px-4 pb-2 bg-surface dark:bg-inverse-surface shadow-[0_-4px_20px_-2px_rgba(0,0,0,0.05)] z-50">
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-3 py-1 active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-sm text-label-sm">Intro</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1 hover:bg-surface-container-low active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="clinical_notes">clinical_notes</span>
+<span class="font-label-sm text-label-sm">Progetto</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1 hover:bg-surface-container-low active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="font-label-sm text-label-sm">Diario</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1 hover:bg-surface-container-low active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="contact_mail">contact_mail</span>
+<span class="font-label-sm text-label-sm">Contatti</span>
+</a>
+</nav>
+
+
+</body></html>
