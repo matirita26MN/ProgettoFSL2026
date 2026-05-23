@@ -97,12 +97,10 @@
       }
     </script>
 <style>
-        body { font-family: 'Lexend', sans-serif; }
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-            display: inline-block;
-            vertical-align: middle;
         }
+        body { font-family: 'Lexend', sans-serif; }
     </style>
 <style>
     body {
@@ -111,171 +109,163 @@
   </style>
   </head>
 <body class="bg-surface text-on-surface">
-<!-- TopAppBar Shell -->
+<!-- TopAppBar -->
 <header class="fixed top-0 w-full z-50 bg-surface dark:bg-on-surface shadow-sm flex items-center justify-between px-margin-mobile md:px-margin-desktop h-16 w-full">
 <div class="flex items-center gap-2">
 <span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim" data-icon="medication">medication</span>
 <span class="font-headline-sm text-headline-sm font-semibold text-primary dark:text-primary-fixed-dim">PharmaPortfolio</span>
 </div>
 <nav class="hidden md:flex gap-8">
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:opacity-80 transition-opacity" href="#">Intro</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:opacity-80 transition-opacity" href="#">Progetto</a>
-<a class="font-label-md text-label-md text-primary dark:text-primary-fixed-dim hover:opacity-80 transition-opacity" href="#">Diario</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:opacity-80 transition-opacity" href="#">Contatti</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-label-md text-label-md hover:opacity-80 transition-opacity" href="#">Intro</a>
+<a class="text-primary dark:text-primary-fixed-dim font-label-md text-label-md font-bold hover:opacity-80 transition-opacity" href="#">Progetto</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-label-md text-label-md hover:opacity-80 transition-opacity" href="#">Diario</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-label-md text-label-md hover:opacity-80 transition-opacity" href="#">Contatti</a>
 </nav>
 </header>
 <main class="pt-24 pb-32 px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto">
 <!-- Hero Section -->
-<section class="mb-20 text-center md:text-left">
-<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-4 text-on-surface">Diario dell'Esperienza</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Un resoconto dettagliato del tirocinio curricolare svolto nel mese di Giugno 2025, tra dispensazione clinica e gestione galenica.</p>
+<section class="mb-20">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1">
+<div class="inline-flex items-center px-4 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed mb-6 font-label-sm text-label-sm">
+<span class="mr-2">Giu 2025</span> • <span class="">Stage Clinico</span>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6 leading-tight">
+                        La mia esperienza in Farmacia
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-8">
+                        Un percorso intensivo di una settimana e due giorni focalizzato sull'operatività quotidiana e la gestione del paziente nel contesto della farmacia territoriale.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<div class="flex items-center gap-2 px-4 py-2 bg-surface-container-low border border-outline-variant rounded-xl">
+<span class="material-symbols-outlined text-primary" data-icon="verified">verified</span>
+<span class="font-label-md text-label-md">Accreditato</span>
+</div>
+<div class="flex items-center gap-2 px-4 py-2 bg-surface-container-low border border-outline-variant rounded-xl">
+<span class="material-symbols-outlined text-tertiary" data-icon="schedule">schedule</span>
+<span class="font-label-md text-label-md">9 Giorni Totali</span>
+</div>
+</div>
+</div>
+<div class="flex-1 w-full aspect-video rounded-[2rem] overflow-hidden shadow-lg border border-surface-variant">
+<img class="w-full h-full object-cover" data-alt="A clean, bright interior of a modern European pharmacy with minimalist white shelves holding organized medication boxes. The lighting is soft and clinical, emphasizing a sense of order and professional hygiene. Subtle accents of fresh green plants are visible against a pure white background. The atmosphere is academic, calm, and technologically advanced, reflecting a forward-thinking healthcare environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrLUwGJrMovDLlSbP_BY6UIu16R_W6Qj3PODzw6Xxz2jmdVakPqdOUB_Jvn-SUO6saFTid2ObXAu1Tt9kmPd7eNOdVBStVsryAIJBOxF_uo--QfEPaiFNa35rPE_opZJmsw0YzBSKQe7qzyA4Gh88IiaKV8kgeolgXF6aeFLtdku79ppdTcWOlhcfCdM8utjUOC93d5zyAvcLEeYVyjLpvt2MmeOfrRLbCT_oIYAdpw3oFeJKF7--7Ip6v0pL9R7UkIp2Ppzh35ZY">
+</div>
+</div>
 </section>
-<!-- Timeline Grid -->
-<div class="relative">
-<!-- Central Vertical Line (Desktop) -->
-<div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-outline-variant opacity-30"></div>
-<!-- Log Entries -->
-<div class="space-y-12 md:space-y-24">
-<!-- Day 1 -->
-<article class="flex flex-col md:flex-row items-center gap-8 relative group">
-<div class="w-full md:w-1/2 md:text-right">
-<span class="inline-block px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full font-label-sm text-label-sm mb-2">09/06 -&nbsp; 17/06 Giugno 2025</span>
-<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Cosa ho fatto?&nbsp;</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">I primi giorni in farmacia sono stati dedicati alla mia formazione, durante i quali mi sono state spiegate le attività che avrei svolto successivamente. Ogni giorno mi occupavo di inserire i medicinali all'interno del magazzino, controllando attentamente le date di scadenza, e ho imparato a preparare gli ordini online.</p>
+<!-- Bento Grid Experience Focus -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-20">
+<!-- Card 1: Gestione Scorte -->
+<div class="md:col-span-8 bg-surface-container-lowest border border-surface-variant rounded-[1.5rem] p-8 shadow-[0_4px_20px_-2px_rgba(0,0,0,0.05)] hover:shadow-[0_12px_32px_-4px_rgba(0,0,0,0.1)] transition-all">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="inventory_2">inventory_2</span>
 </div>
-<div class="z-10 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-lg border-4 border-surface">
-<span class="material-symbols-outlined" data-icon="login">login</span>
-</div>
-<div class="w-full md:w-1/2">
-<div class="bg-surface-container-lowest border border-surface-variant p-2 rounded-xl shadow-[0_4px_20px_-2px_rgba(0,0,0,0.05)] overflow-hidden">
-<img class="rounded-lg w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A clean, minimalist pharmacy interior with organized shelves of medical supplies. Soft natural light streams through large windows, creating a clinical but welcoming atmosphere. The primary palette features bright whites and subtle greens, reflecting professional healthcare standards. A modern robotic dispensing system is visible in the background, showing technological advancement." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMZF7e3yX5lQr8eAf0ODkY4b6sd7NOPvL_5BJWBu8H-6H5fXn02o0pdLeJ0z1iSpHcyYlYdCAweLzWRp8N1q6cqkyiJj6GF8kdTyBb7_VhAVMrqDGm7Gajf_ehqil5n8cZvPlhYwoq8iHK0p9GyviFw3NAff-PccU5nUIQ9ArXtY8M8DrJE4i_OpZOHz_YOdlZ0QIxjzQ3LoLBMO_2rL25umd2J-2iQWEtU7eH6pE5qJwjg7tYYRze3S78wRhsoZkz5KQ57EwxAJc">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Gestione Scorte e Logistica</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                    Ho partecipato attivamente alla gestione del magazzino, utilizzando sistemi software per il monitoraggio dei livelli di scorta e la gestione degli ordini ai distributori. La precisione nella ricezione dei farmaci e nel controllo delle scadenze è stata fondamentale per garantire la continuità del servizio.
+                </p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm">Software Gestionale</span>
+<span class="px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm">Controllo Qualità</span>
+<span class="px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm">Logistica Sanitaria</span>
 </div>
 </div>
-</article>
-<!-- Day 2 -->
-<article class="flex flex-col md:flex-row-reverse items-center gap-8 relative group">
-<div class="w-full md:w-1/2 md:text-left">
-<span class="inline-block px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed-variant rounded-full font-label-sm text-label-sm mb-2">&nbsp;10/06 Giugno 2025</span>
-<h3 class="font-headline-sm text-headline-sm text-tertiary mb-2">Esperienza in laboratorio</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Il secondo giorno, nello specifico, ho svolto un'attività in laboratorio affiancando la farmacista: <span data-path-to-node="3,0" data-index-in-node="101" class="">applicando le mie conoscenze scientifiche</span>, ho preparato e trasformato delle pastiglie per cani, riducendo il dosaggio da 5mg a 3mg attraverso l'utilizzo di una strumentazione adeguata.</p>
-</div>
-<div class="z-10 w-12 h-12 rounded-full bg-tertiary-container flex items-center justify-center text-on-tertiary-container shadow-lg border-4 border-surface">
-<span class="material-symbols-outlined" data-icon="science">science</span>
-</div>
-<div class="w-full md:w-1/2">
-<div class="bg-surface-container-lowest border border-surface-variant p-2 rounded-xl shadow-[0_4px_20px_-2px_rgba(0,0,0,0.05)] overflow-hidden">
-<img class="rounded-lg w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Close-up of professional laboratory equipment in a pharmacy lab, including a precise digital scale and glass mortars. The scene is lit with bright, cool laboratory lighting that highlights the pristine condition of the tools. Accents of azure blue and fresh green are integrated through sterile containers. The overall mood is one of clinical precision and scientific diligence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsX_pPUQC61HCP3P0bbROeSwsN3byFlhn_r8sYskHchzc-SJZM4KZYmDjSmccU-iWp1M6nYp9iugv0Fx1Op7N3Ej1EZ1qMTrGmZhrqksmLGhKfaFOsjjgvhTbRQevNcEu8HNY5VzbV1n4Uc7W2V-8FN5WxvC_TOkeBtCvCaARbYfAov1wEhRgiN1Gvk-GokNAcmRPmpny5LMpxt25ES1WIr7whgFhWZ0sGpfKejV3vEj8ZKN7PqLOtka6w19TMde1m9oPzlBQPXpQ">
-</div>
-</div>
-</article>
-<!-- Days 3-7 Summary Card (Bento Style) -->
-<article class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<div class="md:col-span-2 bg-white border border-surface-variant rounded-xl p-8 shadow-[0_4px_20px_-2px_rgba(0,0,0,0.05)]">
-<div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-secondary" data-icon="calendar_month">calendar_month</span>
-<h3 class="font-headline-sm text-headline-sm text-on-surface">Settimana Centrale</h3>
-</div>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6">Un periodo intensivo focalizzato sulla gestione del paziente e sul consiglio farmaceutico professionale. Sviluppo di soft skills comunicative.</p>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-<div class="flex items-start gap-2">
-<span class="material-symbols-outlined text-primary-container" data-icon="check_circle">check_circle</span>
-<span class="font-label-md text-label-md">Analisi ricette elettroniche</span>
-</div>
-<div class="flex items-start gap-2">
-
-<span class="font-label-md text-label-md"><br></span>
-</div>
-<div class="flex items-start gap-2">
-<span class="material-symbols-outlined text-primary-container" data-icon="check_circle">check_circle</span>
-<span class="font-label-md text-label-md">Gestione del magazzino</span>
-</div>
-<div class="flex items-start gap-2">
-<span class="material-symbols-outlined text-primary-container" data-icon="check_circle">check_circle</span>
-<span class="font-label-md text-label-md">Consulenza integratori</span>
-</div>
-</div>
-</div>
-<div class="bg-primary-container text-on-primary-container rounded-xl p-8 flex flex-col justify-between">
+<!-- Card 2: Highlight Giallo -->
+<div class="md:col-span-4 bg-tertiary-container/10 border border-tertiary/20 rounded-[1.5rem] p-8 flex flex-col justify-between">
 <div>
-<span class="font-display-lg text-display-lg block mb-2">40h</span>
-<span class="font-label-md text-label-md uppercase tracking-wider opacity-90">Ore Totali Settimana</span>
+<span class="material-symbols-outlined text-tertiary text-4xl mb-4" data-icon="insights">insights</span>
+<h3 class="font-headline-sm text-headline-sm text-on-tertiary-container mb-2">Impatto Formativo</h3>
 </div>
-<p class="font-body-md text-body-md">Esperienza pratica sul campo con supervisione diretta del farmacista titolare.</p>
+<div class="font-display-lg text-tertiary font-bold">46h 30m</div>
+<p class="font-label-md text-label-md text-on-tertiary-container">Farmaci catalogati e organizzati durante la prima settimana di attività.</p>
 </div>
-</article>
-<!-- Day 8 -->
-<article class="flex flex-col md:flex-row items-center gap-8 relative group">
-<div class="w-full md:w-1/2 md:text-right">
-<span class="inline-block px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full font-label-sm text-label-sm mb-2">08 Giugno 2025</span>
-<h3 class="font-headline-sm text-headline-sm text-secondary mb-2">Servizi in Farmacia</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Supporto nell'esecuzione di test diagnostici di prima istanza: glicemia, colesterolo e profilo lipidico.</p>
+<!-- Card 3: Assistenza al Banco -->
+<div class="md:col-span-5 bg-secondary-container/10 border border-secondary/20 rounded-[1.5rem] p-8 overflow-hidden relative">
+<div class="relative z-10">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/30 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary" data-icon="support_agent">support_agent</span>
 </div>
-<div class="z-10 w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-on-secondary shadow-lg border-4 border-surface">
-<span class="material-symbols-outlined" data-icon="biotech">biotech</span>
+<h3 class="font-headline-sm text-headline-sm text-on-secondary-container mb-4">Assistenza al Banco</h3>
+<p class="font-body-md text-body-md text-on-secondary-variant">
+                        Sotto supervisione, ho assistito i farmacisti nella comunicazione con i pazienti, apprendendo le tecniche di ascolto attivo e l'importanza del consiglio professionale personalizzato.
+                    </p>
 </div>
-<div class="w-full md:w-1/2">
-<div class="bg-surface-container-lowest border border-surface-variant p-2 rounded-xl shadow-[0_4px_20px_-2px_rgba(0,0,0,0.05)] overflow-hidden">
-<img class="rounded-lg w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A macro photograph of medical diagnostic tools including a blood glucose monitor and sterile test strips on a white surface. The lighting is bright and even, emphasizing cleanliness and pharmaceutical precision. The composition is artistic yet clinical, with a color palette of white, light gray, and deep azure blue accents. The scene conveys a sense of modern healthcare services." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEUvF5dh6wlpSfvNNC1sQ5nkAjQrvkMSSbo_S551oN-mOq1b-LvGp_5xBHSi8l_mOekrzXvHpzNNU40WXe1DmZjkkueHRgJ3f-vkdCRDPg5Fp5BpbXhYh73f4pNT9ePBiRfjEt0dikLldsVWpkdSC4oxmfNo7S-wJplrjJRyETwsAymOOR5K5Omt5-9MYS6rL_YaCBah-N8VwCjjOem_e8B2xt2z4QE_Qp_EHUnwbWVKgBtSJiptfNUZogUwWEeht1uw0T58eQGeE">
-</div>
-</div>
-</article>
-<!-- Day 9 -->
-<article class="flex flex-col md:flex-row-reverse items-center gap-8 relative group">
-<div class="w-full md:w-1/2 md:text-left">
-<span class="inline-block px-3 py-1 bg-surface-container-highest text-on-surface rounded-full font-label-sm text-label-sm mb-2">09 Giugno 2025</span>
-<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Revisione Finale</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Bilancio delle competenze acquisite e discussione del caso clinico scelto per la relazione finale.</p>
-</div>
-<div class="z-10 w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center text-on-surface-variant shadow-lg border-4 border-surface">
-<span class="material-symbols-outlined" data-icon="grading">grading</span>
-</div>
-<div class="w-full md:w-1/2">
-<div class="bg-surface-container-lowest border border-surface-variant p-2 rounded-xl shadow-[0_4px_20px_-2px_rgba(0,0,0,0.05)] overflow-hidden">
-<img class="rounded-lg w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A top-down view of an organized workspace featuring a digital tablet, a professional notebook, and a stethoscope. The setting is bright and academic, with a minimalist desk arrangement. The colors are predominantly white and light gray with a single pop of fresh green from a desk plant. This image represents the transition from student life to professional pharmacy practice." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0QjVA36m9XY7utI1Cedky5FRRzp2HsyhcDYLDMyVLgm7xLsl_635GQl-glE7jgH7KgGD12qof6Y03sJpKo8Yo9bRcXUunZJ7vtfiIcQUOzbI598tfJn7l_l0iuCkq2rryF3mglHzAchejmcmrQPqz09MnMtwOu9DkXDhgo9J6JxoBW8JvnW-rqfB4QWxf3Ur36UysslS44hb9FYeFn3spHazFiGIC9HP3UT3-XHxpv3n5WesILSwJulcY9I1apjYC6x1lN2DGGMA">
+<div class="absolute -bottom-6 -right-6 opacity-10">
+<span class="material-symbols-outlined text-[120px]" data-icon="forum">forum</span>
 </div>
 </div>
-</article>
+<!-- Card 4: Organizzazione Farmaci -->
+<div class="md:col-span-7 bg-surface-container-lowest border border-surface-variant rounded-[1.5rem] p-8 shadow-[0_4px_20px_-2px_rgba(0,0,0,0.05)]">
+<div class="flex flex-col h-full justify-center">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Organizzazione e Protocollo</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                        L'ordine metodico delle preparazioni galeniche e dei farmaci da banco segue logiche di sicurezza. Ho contribuito alla riorganizzazione di diverse sezioni secondo criteri di efficienza e accessibilità.
+                    </p>
+<div class="h-1 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary-container w-[85%] rounded-full"></div>
+</div>
+<div class="flex justify-between mt-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="">Precisione Metodologica</span>
+<span class="">85%</span>
 </div>
 </div>
-<!-- Finale Section -->
-<section class="mt-32 p-8 md:p-12 rounded-2xl bg-gradient-to-br from-primary-container to-secondary text-on-primary-container text-center">
-<h2 class="font-headline-md text-headline-md mb-4 text-white">Pronta per il Diploma</h2>
-<p class="font-body-lg text-body-lg text-white/90 max-w-2xl mx-auto mb-8">
-                L'esperienza pratica ha consolidato le mie basi teoriche, preparandomi ad affrontare l'esame di Stato con una consapevolezza clinica matura e professionale.
-            </p>
-<div class="flex flex-col md:flex-row gap-4 justify-center">
-<button class="bg-white text-primary px-8 py-3 rounded-xl font-label-md text-label-md font-bold shadow-lg active:scale-95 transition-all">Scarica Logbook Completo</button>
-<button class="border border-white/40 text-white px-8 py-3 rounded-xl font-label-md text-label-md font-bold hover:bg-white/10 active:scale-95 transition-all">Vedi Portfolio Progetti</button>
+</div>
+</section>
+<!-- Project Details Section -->
+<section class="py-16 border-t border-surface-variant">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-12 text-center">Dettagli del Progetto Formativo</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="text-center">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="calendar_month">calendar_month</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm mb-2">Periodo</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Giugno 2025<br>09/06/25 - 17/06/25</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="location_on">location_on</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm mb-2">Sede</h4>
+<p class="font-body-md text-body-md text-on-surface-variant"><span style="color: rgb(31, 31, 31); font-family: &quot;Google Sans&quot;, Arial, sans-serif; font-size: 22px; text-align: start; background-color: rgb(255, 255, 255);" class="">Farmacia S. Anna - Dott. Domenico Gazzola &amp; C. S.N.C.</span></p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 rounded-full bg-tertiary/10 flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="school">school</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm mb-2">Mentorship</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Farmacista responsabile degli ordini di farmaci&nbsp;</p>
+</div>
 </div>
 </section>
 </main>
-<!-- Footer Shell -->
+<!-- Footer -->
 <footer class="relative w-full py-12 bg-surface-container-lowest dark:bg-surface-dim border-t border-surface-variant dark:border-outline-variant flex flex-col items-center justify-center w-full gap-4 text-center px-margin-mobile md:px-margin-desktop">
+<span class="font-label-md text-label-md font-bold text-on-surface">PharmaPortfolio</span>
 <div class="flex gap-6 mb-4">
-<a class="font-label-md text-label-md font-bold text-on-surface hover:text-primary transition-colors hover:underline" href="#">LinkedIn</a>
-<a class="font-label-md text-label-md font-bold text-on-surface hover:text-primary transition-colors hover:underline" href="#">ResearchGate</a>
-<a class="font-label-md text-label-md font-bold text-on-surface hover:text-primary transition-colors hover:underline" href="#">Curriculum Vitae</a>
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors hover:underline" href="#">LinkedIn</a>
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors hover:underline" href="#">ResearchGate</a>
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors hover:underline" href="#">Curriculum Vitae</a>
 </div>
-<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Pharmacy Internship Portfolio | Candidate for Graduation</p>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2025 Pharmacy Internship Portfolio&nbsp;</p>
 </footer>
-<!-- BottomNavBar Shell (Mobile) -->
+<!-- BottomNavBar (Mobile Only) -->
 <nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center h-20 px-4 pb-2 bg-surface dark:bg-inverse-surface shadow-[0_-4px_20px_-2px_rgba(0,0,0,0.05)] z-50">
-<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1 hover:bg-surface-container-low transition-all" href="#">
+<div class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1 active:scale-90 transition-all duration-200">
 <span class="material-symbols-outlined" data-icon="person">person</span>
 <span class="font-label-sm text-label-sm">Intro</span>
-</a>
-<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1 hover:bg-surface-container-low transition-all" href="#">
+</div>
+<div class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-3 py-1 active:scale-90 transition-all duration-200">
 <span class="material-symbols-outlined" data-icon="clinical_notes">clinical_notes</span>
 <span class="font-label-sm text-label-sm">Progetto</span>
-</a>
-<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-3 py-1 active:scale-90 transition-all duration-200" href="#">
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1 active:scale-90 transition-all duration-200">
 <span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
 <span class="font-label-sm text-label-sm">Diario</span>
-</a>
-<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1 hover:bg-surface-container-low transition-all" href="#">
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1 active:scale-90 transition-all duration-200">
 <span class="material-symbols-outlined" data-icon="contact_mail">contact_mail</span>
 <span class="font-label-sm text-label-sm">Contatti</span>
-</a>
+</div>
 </nav>
 
 
