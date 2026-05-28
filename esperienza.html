@@ -1,0 +1,272 @@
+<!DOCTYPE html><html lang="it" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary": "#ffffff",
+                    "inverse-surface": "#2f3038",
+                    "inverse-on-surface": "#f1effa",
+                    "background": "#fbf8ff",
+                    "primary-container": "#10b981",
+                    "inverse-primary": "#4edea3",
+                    "surface-container": "#eeedf7",
+                    "on-secondary-fixed": "#001c39",
+                    "secondary-fixed": "#d4e3ff",
+                    "error-container": "#ffdad6",
+                    "primary-fixed-dim": "#4edea3",
+                    "surface-variant": "#e3e1ec",
+                    "on-surface": "#1a1b22",
+                    "on-primary-fixed-variant": "#005236",
+                    "on-tertiary-fixed-variant": "#5c4300",
+                    "secondary": "#0060ac",
+                    "tertiary-fixed-dim": "#f9bd22",
+                    "on-primary-container": "#00422b",
+                    "surface-dim": "#dad9e3",
+                    "outline-variant": "#bbcabf",
+                    "on-secondary-fixed-variant": "#004883",
+                    "on-secondary": "#ffffff",
+                    "outline": "#6c7a71",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#6ffbbe",
+                    "surface-container-highest": "#e3e1ec",
+                    "on-background": "#1a1b22",
+                    "primary": "#006c49",
+                    "secondary-container": "#64a8fe",
+                    "secondary-fixed-dim": "#a4c9ff",
+                    "surface-container-high": "#e8e7f1",
+                    "on-tertiary-fixed": "#261a00",
+                    "surface-bright": "#fbf8ff",
+                    "on-tertiary-container": "#4a3500",
+                    "tertiary-fixed": "#ffdf9f",
+                    "surface": "#fbf8ff",
+                    "on-surface-variant": "#3c4a42",
+                    "tertiary-container": "#ce9a00",
+                    "error": "#ba1a1a",
+                    "surface-container-low": "#f4f2fd",
+                    "tertiary": "#795900",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed": "#002113",
+                    "on-secondary-container": "#003c70",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "surface-tint": "#006c49"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "margin-mobile": "16px",
+                    "margin-desktop": "48px",
+                    "base": "8px",
+                    "container-max-width": "1200px"
+            },
+            "fontFamily": {
+                    "display-lg-mobile": ["Lexend"],
+                    "headline-sm": ["Lexend"],
+                    "label-md": ["Lexend"],
+                    "headline-md": ["Lexend"],
+                    "body-lg": ["Lexend"],
+                    "display-lg": ["Lexend"],
+                    "body-md": ["Lexend"],
+                    "label-sm": ["Lexend"]
+            },
+            "fontSize": {
+                    "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Lexend', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface dark:bg-on-surface shadow-sm flex items-center justify-between px-margin-mobile md:px-margin-desktop h-16 w-full">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim" data-icon="medication">medication</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-primary dark:text-primary-fixed-dim">PharmaPortfolio</span>
+</div>
+<nav class="hidden md:flex gap-8">
+<a class="text-on-surface-variant dark:text-surface-variant font-label-md text-label-md hover:opacity-80 transition-opacity" href="#">Intro</a>
+<a class="text-primary dark:text-primary-fixed-dim font-label-md text-label-md font-bold hover:opacity-80 transition-opacity" href="#">Progetto</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-label-md text-label-md hover:opacity-80 transition-opacity" href="#">Diario</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-label-md text-label-md hover:opacity-80 transition-opacity" href="#">Contatti</a>
+</nav>
+</header>
+<main class="pt-24 pb-32 px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto">
+<!-- Hero Section -->
+<section class="mb-20">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1">
+<div class="inline-flex items-center px-4 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed mb-6 font-label-sm text-label-sm">
+<span class="mr-2">Giu 2025</span> • <span class="">Stage Clinico</span>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6 leading-tight">
+                        La mia esperienza in Farmacia
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-8">
+                        Un percorso intensivo di una settimana e due giorni focalizzato sull'operatività quotidiana e la gestione del paziente nel contesto della farmacia territoriale.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<div class="flex items-center gap-2 px-4 py-2 bg-surface-container-low border border-outline-variant rounded-xl">
+<span class="material-symbols-outlined text-primary" data-icon="verified">verified</span>
+<span class="font-label-md text-label-md">Accreditato</span>
+</div>
+<div class="flex items-center gap-2 px-4 py-2 bg-surface-container-low border border-outline-variant rounded-xl">
+<span class="material-symbols-outlined text-tertiary" data-icon="schedule">schedule</span>
+<span class="font-label-md text-label-md">9 Giorni Totali</span>
+</div>
+</div>
+</div>
+<div class="flex-1 w-full aspect-video rounded-[2rem] overflow-hidden shadow-lg border border-surface-variant">
+<img class="w-full h-full object-cover" data-alt="A clean, bright interior of a modern European pharmacy with minimalist white shelves holding organized medication boxes. The lighting is soft and clinical, emphasizing a sense of order and professional hygiene. Subtle accents of fresh green plants are visible against a pure white background. The atmosphere is academic, calm, and technologically advanced, reflecting a forward-thinking healthcare environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrLUwGJrMovDLlSbP_BY6UIu16R_W6Qj3PODzw6Xxz2jmdVakPqdOUB_Jvn-SUO6saFTid2ObXAu1Tt9kmPd7eNOdVBStVsryAIJBOxF_uo--QfEPaiFNa35rPE_opZJmsw0YzBSKQe7qzyA4Gh88IiaKV8kgeolgXF6aeFLtdku79ppdTcWOlhcfCdM8utjUOC93d5zyAvcLEeYVyjLpvt2MmeOfrRLbCT_oIYAdpw3oFeJKF7--7Ip6v0pL9R7UkIp2Ppzh35ZY">
+</div>
+</div>
+</section>
+<!-- Bento Grid Experience Focus -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-20">
+<!-- Card 1: Gestione Scorte -->
+<div class="md:col-span-8 bg-surface-container-lowest border border-surface-variant rounded-[1.5rem] p-8 shadow-[0_4px_20px_-2px_rgba(0,0,0,0.05)] hover:shadow-[0_12px_32px_-4px_rgba(0,0,0,0.1)] transition-all">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="inventory_2">inventory_2</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Gestione Scorte e Logistica</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                    Ho partecipato attivamente alla gestione del magazzino, utilizzando sistemi software per il monitoraggio dei livelli di scorta e la gestione degli ordini ai distributori. La precisione nella ricezione dei farmaci e nel controllo delle scadenze è stata fondamentale per garantire la continuità del servizio.
+                </p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm">Software Gestionale</span>
+<span class="px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm">Controllo Qualità</span>
+<span class="px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm">Logistica Sanitaria</span>
+</div>
+</div>
+<!-- Card 2: Highlight Giallo -->
+<div class="md:col-span-4 bg-tertiary-container/10 border border-tertiary/20 rounded-[1.5rem] p-8 flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-tertiary text-4xl mb-4" data-icon="insights">insights</span>
+<h3 class="font-headline-sm text-headline-sm text-on-tertiary-container mb-2">Impatto Formativo</h3>
+</div>
+<div class="font-display-lg text-tertiary font-bold">46h 30m</div>
+<p class="font-label-md text-label-md text-on-tertiary-container">Farmaci catalogati e organizzati durante la prima settimana di attività.</p>
+</div>
+<!-- Card 3: Assistenza al Banco -->
+<div class="md:col-span-5 bg-secondary-container/10 border border-secondary/20 rounded-[1.5rem] p-8 overflow-hidden relative">
+<div class="relative z-10">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/30 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary" data-icon="support_agent">support_agent</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-secondary-container mb-4">Assistenza al Banco</h3>
+<p class="font-body-md text-body-md text-on-secondary-variant">
+                        Sotto supervisione, ho assistito i farmacisti nella comunicazione con i pazienti, apprendendo le tecniche di ascolto attivo e l'importanza del consiglio professionale personalizzato.
+                    </p>
+</div>
+<div class="absolute -bottom-6 -right-6 opacity-10">
+<span class="material-symbols-outlined text-[120px]" data-icon="forum">forum</span>
+</div>
+</div>
+<!-- Card 4: Organizzazione Farmaci -->
+<div class="md:col-span-7 bg-surface-container-lowest border border-surface-variant rounded-[1.5rem] p-8 shadow-[0_4px_20px_-2px_rgba(0,0,0,0.05)]">
+<div class="flex flex-col h-full justify-center">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Organizzazione e Protocollo</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                        L'ordine metodico delle preparazioni galeniche e dei farmaci da banco segue logiche di sicurezza. Ho contribuito alla riorganizzazione di diverse sezioni secondo criteri di efficienza e accessibilità.
+                    </p>
+<div class="h-1 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary-container w-[85%] rounded-full"></div>
+</div>
+<div class="flex justify-between mt-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="">Precisione Metodologica</span>
+<span class="">85%</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Project Details Section -->
+<section class="py-16 border-t border-surface-variant">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-12 text-center">Dettagli del Progetto Formativo</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="text-center">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="calendar_month">calendar_month</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm mb-2">Periodo</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Giugno 2025<br>09/06/25 - 17/06/25</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="location_on">location_on</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm mb-2">Sede</h4>
+<p class="font-body-md text-body-md text-on-surface-variant"><span style="color: rgb(31, 31, 31); font-family: &quot;Google Sans&quot;, Arial, sans-serif; font-size: 22px; text-align: start; background-color: rgb(255, 255, 255);" class="">Farmacia S. Anna - Dott. Domenico Gazzola &amp; C. S.N.C.</span></p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 rounded-full bg-tertiary/10 flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="school">school</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm mb-2">Mentorship</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Farmacista responsabile degli ordini di farmaci&nbsp;</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="relative w-full py-12 bg-surface-container-lowest dark:bg-surface-dim border-t border-surface-variant dark:border-outline-variant flex flex-col items-center justify-center w-full gap-4 text-center px-margin-mobile md:px-margin-desktop">
+<span class="font-label-md text-label-md font-bold text-on-surface">PharmaPortfolio</span>
+<div class="flex gap-6 mb-4">
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors hover:underline" href="#">LinkedIn</a>
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors hover:underline" href="#">ResearchGate</a>
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors hover:underline" href="#">Curriculum Vitae</a>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2025 Pharmacy Internship Portfolio&nbsp;</p>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center h-20 px-4 pb-2 bg-surface dark:bg-inverse-surface shadow-[0_-4px_20px_-2px_rgba(0,0,0,0.05)] z-50">
+<div class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1 active:scale-90 transition-all duration-200">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-sm text-label-sm">Intro</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-3 py-1 active:scale-90 transition-all duration-200">
+<span class="material-symbols-outlined" data-icon="clinical_notes">clinical_notes</span>
+<span class="font-label-sm text-label-sm">Progetto</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1 active:scale-90 transition-all duration-200">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="font-label-sm text-label-sm">Diario</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1 active:scale-90 transition-all duration-200">
+<span class="material-symbols-outlined" data-icon="contact_mail">contact_mail</span>
+<span class="font-label-sm text-label-sm">Contatti</span>
+</div>
+</nav>
+
+
+</body></html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html><html lang="it" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary": "#ffffff",
+                    "inverse-surface": "#2f3038",
+                    "inverse-on-surface": "#f1effa",
+                    "background": "#fbf8ff",
+                    "primary-container": "#10b981",
+                    "inverse-primary": "#4edea3",
+                    "surface-container": "#eeedf7",
+                    "on-secondary-fixed": "#001c39",
+                    "secondary-fixed": "#d4e3ff",
+                    "error-container": "#ffdad6",
+                    "primary-fixed-dim": "#4edea3",
+                    "surface-variant": "#e3e1ec",
+                    "on-surface": "#1a1b22",
+                    "on-primary-fixed-variant": "#005236",
+                    "on-tertiary-fixed-variant": "#5c4300",
+                    "secondary": "#0060ac",
+                    "tertiary-fixed-dim": "#f9bd22",
+                    "on-primary-container": "#00422b",
+                    "surface-dim": "#dad9e3",
+                    "outline-variant": "#bbcabf",
+                    "on-secondary-fixed-variant": "#004883",
+                    "on-secondary": "#ffffff",
+                    "outline": "#6c7a71",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#6ffbbe",
+                    "surface-container-highest": "#e3e1ec",
+                    "on-background": "#1a1b22",
+                    "primary": "#006c49",
+                    "secondary-container": "#64a8fe",
+                    "secondary-fixed-dim": "#a4c9ff",
+                    "surface-container-high": "#e8e7f1",
+                    "on-tertiary-fixed": "#261a00",
+                    "surface-bright": "#fbf8ff",
+                    "on-tertiary-container": "#4a3500",
+                    "tertiary-fixed": "#ffdf9f",
+                    "surface": "#fbf8ff",
+                    "on-surface-variant": "#3c4a42",
+                    "tertiary-container": "#ce9a00",
+                    "error": "#ba1a1a",
+                    "surface-container-low": "#f4f2fd",
+                    "tertiary": "#795900",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed": "#002113",
+                    "on-secondary-container": "#003c70",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "surface-tint": "#006c49"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "margin-mobile": "16px",
+                    "margin-desktop": "48px",
+                    "base": "8px",
+                    "container-max-width": "1200px"
+            },
+            "fontFamily": {
+                    "display-lg-mobile": ["Lexend"],
+                    "headline-sm": ["Lexend"],
+                    "label-md": ["Lexend"],
+                    "headline-md": ["Lexend"],
+                    "body-lg": ["Lexend"],
+                    "display-lg": ["Lexend"],
+                    "body-md": ["Lexend"],
+                    "label-sm": ["Lexend"]
+            },
+            "fontSize": {
+                    "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Lexend', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar Shell -->
+<header class="fixed top-0 w-full z-50 bg-surface dark:bg-on-surface shadow-sm flex items-center justify-between px-margin-mobile md:px-margin-desktop h-16 w-full">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim" data-icon="medication">medication</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-primary dark:text-primary-fixed-dim">PharmaPortfolio</span>
+</div>
+<nav class="hidden md:flex gap-8">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:opacity-80 transition-opacity" href="index.html">Intro</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:opacity-80 transition-opacity" href="esperienza.html">Progetto</a>
+<a class="font-label-md text-label-md text-primary dark:text-primary-fixed-dim hover:opacity-80 transition-opacity" href="diario.html">Diario</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:opacity-80 transition-opacity" href="index.html#contatti">Contatti</a>
+</nav>
+</header>
+<main class="pt-24 pb-32 px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto">
+<!-- Hero Section -->
+<section class="mb-20 text-center md:text-left">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-4 text-on-surface">Diario dell'Esperienza</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Un resoconto dettagliato del tirocinio curricolare svolto nel mese di Giugno 2025, tra dispensazione clinica e gestione galenica.</p>
+</section>
+<!-- Timeline Grid -->
+<div class="relative">
+<!-- Central Vertical Line (Desktop) -->
+<div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-outline-variant opacity-30"></div>
+<!-- Log Entries -->
+<div class="space-y-12 md:space-y-24">
+<!-- Day 1 -->
+<article class="flex flex-col md:flex-row items-center gap-8 relative group">
+<div class="w-full md:w-1/2 md:text-right">
+<span class="inline-block px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full font-label-sm text-label-sm mb-2">09/06 - 17/06 Giugno 2025</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Cosa ho fatto?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">I primi giorni in farmacia sono stati dedicati alla mia formazione, durante i quali mi sono state spiegate le attività che avrei svolto successivamente. Ogni giorno mi occupavo di inserire i medicinali all'interno del magazzino, controllando attentamente le date di scadenza, e ho imparato a preparare gli ordini online.</p>
+</div>
+<div class="z-10 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-lg border-4 border-surface">
+<span class="material-symbols-outlined" data-icon="login">login</span>
+</div>
+<div class="w-full md:w-1/2">
+<div class="bg-surface-container-lowest border border-surface-variant p-2 rounded-xl shadow-[0_4px_20px_-2px_rgba(0,0,0,0.05)] overflow-hidden">
+<img class="rounded-lg w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Un interno pulito e minimalista di una farmacia con scaffali organizzati per le scorte mediche" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMZF7e3yX5lQr8eAf0ODkY4b6sd7NOPvL_5BJWBu8H-6H5fXn02o0pdLeJ0z1iSpHcyYlYdCAweLzWRp8N1q6cqkyiJj6GF8kdTyBb7_VhAVMrqDGm7Gajf_ehqil5n8cZvPlhYwoq8iHK0p9GyviFw3NAff-PccU5nUIQ9ArXtY8M8DrJE4i_OpZOHz_YOdlZ0QIxjzQ3LoLBMO_2rL25umd2J-2iQWEtU7eH6pE5qJwjg7tYYRze3S78wRhsoZkz5KQ57EwxAJc">
+</div>
+</div>
+</article>
+<!-- Day 2 -->
+<article class="flex flex-col md:flex-row-reverse items-center gap-8 relative group">
+<div class="w-full md:w-1/2 md:text-left">
+<span class="inline-block px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed-variant rounded-full font-label-sm text-label-sm mb-2">10/06 Giugno 2025</span>
+<h3 class="font-headline-sm text-headline-sm text-tertiary mb-2">Esperienza in laboratorio</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Il secondo giorno, nello specifico, ho svolto un'attività in laboratorio affiancando la farmacista: applicando le mie conoscenze scientifiche, ho preparato e trasformato delle pastiglie per cani, riducendo il dosaggio da 5mg a 3mg attraverso l'utilizzo di una strumentazione adeguata.</p>
+</div>
+<div class="z-10 w-12 h-12 rounded-full bg-tertiary-container flex items-center justify-center text-on-tertiary-container shadow-lg border-4 border-surface">
+<span class="material-symbols-outlined" data-icon="science">science</span>
+</div>
+<div class="w-full md:w-1/2">
+<div class="bg-surface-container-lowest border border-surface-variant p-2 rounded-xl shadow-[0_4px_20px_-2px_rgba(0,0,0,0.05)] overflow-hidden">
+<img class="rounded-lg w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Primo piano di attrezzature di laboratorio professionali in un laboratorio farmaceutico" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsX_pPUQC61HCP3P0bbROeSwsN3byFlhn_r8sYskHchzc-SJZM4KZYmDjSmccU-iWp1M6nYp9iugv0Fx1Op7N3Ej1EZ1qMTrGmZhrqksmLGhKfaFOsjjgvhTbRQevNcEu8HNY5VzbV1n4Uc7W2V-8FN5WxvC_TOkeBtCvCaARbYfAov1wEhRgiN1Gvk-GokNAcmRPmpny5LMpxt25ES1WIr7whgFhWZ0sGpfKejV3vEj8ZKN7PqLOtka6w19TMde1m9oPzlBQPXpQ">
+</div>
+</div>
+</article>
+</div>
+</div>
+</main>
+<!-- Footer Shell -->
+<footer class="relative w-full py-12 bg-surface-container-lowest dark:bg-surface-dim border-t border-surface-variant dark:border-outline-variant flex flex-col items-center justify-center w-full gap-4 text-center px-margin-mobile md:px-margin-desktop">
+<div class="flex gap-6 mb-4">
+<a class="font-label-md text-label-md font-bold text-on-surface hover:text-primary transition-colors hover:underline" href="#">LinkedIn</a>
+<a class="font-label-md text-label-md font-bold text-on-surface hover:text-primary transition-colors hover:underline" href="#">ResearchGate</a>
+<a class="font-label-md text-label-md font-bold text-on-surface hover:text-primary transition-colors hover:underline" href="#">Curriculum Vitae</a>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2025 Pharmacy Internship Portfolio | Candidate for Graduation</p>
+</footer>
+<!-- BottomNavBar Shell (Mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center h-20 px-4 pb-2 bg-surface dark:bg-inverse-surface shadow-[0_-4px_20px_-2px_rgba(0,0,0,0.05)] z-50">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1 hover:bg-surface-container-low transition-all" href="index.html">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-sm text-label-sm">Intro</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1 hover:bg-surface-container-low transition-all" href="esperienza.html">
+<span class="material-symbols-outlined" data-icon="clinical_notes">clinical_notes</span>
+<span class="font-label-sm text-label-sm">Progetto</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-3 py-1 active:scale-90 transition-all duration-200" href="diario.html">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="font-label-sm text-label-sm">Diario</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1 hover:bg-surface-container-low transition-all" href="index.html#contatti">
+<span class="material-symbols-outlined" data-icon="contact_mail">contact_mail</span>
+<span class="font-label-sm text-label-sm">Contatti</span>
+</a>
+</nav>
+</body></html>
